@@ -46,6 +46,7 @@ if(!file_exists($file)) {
 $resource = fopen($file, 'r');
 if($resource == false) {
     echo 'We could not open a handle to the file supplied.'.PHP_EOL;
+    return 0;
 }
 
 /**
